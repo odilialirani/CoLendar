@@ -1,3 +1,8 @@
+// Colendar WebApp
+// Created by Odilia Lirani
+// oclirani@gmail.com
+
+
 var db_key = '1XAViArsBNVMooUlVsUX00qGGr2oTSgPiTuIxqGqIu7A';
 var RECEIVE_URL = 'https://spreadsheets.google.com/feeds/list/1XAViArsBNVMooUlVsUX00qGGr2oTSgPiTuIxqGqIu7A/1/public/basic?alt=json';
 var SUBMIT_URL = "https://script.google.com/macros/s/AKfycbydQlVzcoNcRZjV-sdeL91uf2zXCQIQBHNz-yBmb6CvpckmhK0/exec";
