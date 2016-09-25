@@ -12,7 +12,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
-    
+    <script src="login.js"></script>
     
 <link rel="icon" href="logoscopic.png"/>
 <title>Colendar</title>
@@ -136,9 +136,9 @@
         
         <div id="loginForm">
             <form class="form-inline pull-xs-right">
-                <input class="form-control" placeholder="Email" type="email"></input>
-                <input class="form-control" placeholder="password" type="password"></input>
-                <button class="btn" type="submit">Login</button>
+                <input class="form-control" placeholder="Email" id ="signin_email" type="email"></input>
+                <input class="form-control" placeholder="password" id="signin_password" type="password"></input>
+                <button class="btn" onclick="signin()">Login</button>
             </form>
         </div>
 
@@ -163,8 +163,9 @@
                 <div class="thumbnail">
                   <img src="..." alt="...">
                   <div class="caption">
-                    <h4>Feature 1</h4>
-                    <p>feature 1 blablabla blab labla balblabalb</p>
+                    <h4>Make Account</h4>
+                    <p>Register yourself and enjoy our amazing features! Create your own private calendar.
+                    </p>
                   </div>
               </div>
             </div>
@@ -173,8 +174,8 @@
                 <div class="thumbnail">
                   <img src="..." alt="...">
                   <div class="caption">
-                    <h4>Feature 1</h4>
-                    <p>feature 1 blablabla blab labla balblabalb</p>
+                    <h4>Merge Calendar</h4>
+                    <p>Create a group calendar easily! </p>
                   </div>
               </div>
             </div>
@@ -184,8 +185,8 @@
                 <div class="thumbnail">
                   <img src="..." alt="...">
                   <div class="caption">
-                    <h4>Feature 1</h4>
-                    <p>feature 1 blablabla blab labla balblabalb</p>
+                    <h4>Make Plans</h4>
+                    <p>With CoLendar, making plans have never been easier</p>
                   </div>
               </div>
             </div>
