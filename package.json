@@ -1,0 +1,23 @@
+{
+  "name": "colendar",
+  "version": "1.0.0",
+  "description": "# A WebApp to let you plan your day better!",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odilialirani/CoLendar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odilialirani/CoLendar/issues"
+  },
+  "homepage": "https://github.com/odilialirani/CoLendar#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
