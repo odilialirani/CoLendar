@@ -21,12 +21,68 @@
 
 <style>
     
+    body {
+        background-color: #ffffff;
+        opacity: 1;
+        transition: 3s opacity;
+    }
+    
+    body.fade-out {
+        opacity: 0;
+        transition: none;
+    }
+    
+    h1 {
+        color: #383838;
+        font-family: helvetica;
+        font-weight: 2px;
+        font-size: 90px;
+    }
+    
+    h2 {
+        color: #383838;
+        font-family: helvetica;
+        font-size: 20px;
+        
+        margin-left: 35%;
+        
+        white-space: nowrap;
+        overflow: hidden;
+
+        width:385px;
+
+        animation: type 3s steps(60, end);
+
+        animation-fill-mode:backwards;
+    }
+    
+    h2:nth-child(2){
+      animation: type2 6s steps(60, end);
+    }
+
+    @keyframes type{ 
+        from { width: 0;} 
+    } 
+
+    @keyframes type2{
+
+      0%{width: 0;}
+      50%{width: 0;}
+      100%{ width: 100;} 
+    } 
+
+    @keyframes blink{
+      to{opacity: .0;}
+    }
+
+    
     header {
         height: 55px;
         padding-top: 10px;
-        background-color: #5B7B7A;
+        background-color: rgba(255,255,255,1);
         position: fixed;
         width: 100%;
+        box-shadow: 0px 5px 5px grey;
     }
     
     #leftHeader {
@@ -59,7 +115,7 @@
         text-align:center;
     }
     #jumbotronOverlay {
-            background-color: rgba(60,136,126,0.4);
+            background-color: rgba(204,204,204,0.4);     /* rgba(60,136,126,0.4); */
             height: 455px;
 
     }
@@ -67,29 +123,12 @@
     #heading {
         padding-top: 120px;
     }
-
-    h1 {
-        color: #383838;
-        font-family: helvetica;
-        font-weight: 2px;
-        font-size: 90px;
-    }
-    
-    h2 {
-        color: #383838;
-        font-family: helvetica;
-        font-size: 20px;
-    }
     
     .logoSize {
         height: 130px;
         width: 130px;
         }
     
-    body {
-        background-color: #E0F2E9;
-    }
-
     #features {
         margin: 70px 100px 30px 100px;
     }
@@ -99,19 +138,33 @@
         text-align: center;
     }
     
-    #featureList {
-        padding: 40px;
-    }
     
     .thumbnail {
         height: 300px;
-        background-color: #E0F2E9;
+        background-color: #d9d9d9;
         border: 0;
     }
     
     * {
         margin: 0;
         padding: 0;
+    }
+    
+    .card {
+        width: 20%;
+        float:left;
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    
+    footer {
+        clear: both;
+        text-align: center;
+        height: 60px;
+        background-color: rgba(89,89,89,1);
+        color: rgba(255,255,255,1);
+        padding-top: 0.7%;
     }
 
 
@@ -122,7 +175,11 @@
 
 
 <body>
-
+    
+    <script>document.body.className += ' fade-out'; 
+        window.onload = function () { document.body.className = "";}
+    </script>
+    
     <header>
         <div id="leftHeader">
             <img src="logoscopic.png" style="height:50px"/>
@@ -161,46 +218,29 @@
     
         <h3>Why This App Is Awesome</h3>
     
-        <div id="featureList">
-            <div class="row">
-                <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h4>Make Account</h4>
-                    <p>Register yourself and enjoy our amazing features! Create your own private calendar.
-                    </p>
-                  </div>
-              </div>
-            </div>
-
-            <div class="row">
-                <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h4>Merge Calendar</h4>
-                    <p>Create a group calendar easily! </p>
-                  </div>
-              </div>
-            </div>
-
-
-            <div class="row">
-                <div class="thumbnail">
-                  <img src="..." alt="...">
-                  <div class="caption">
-                    <h4>Make Plans</h4>
-                    <p>With CoLendar, making plans have never been easier</p>
-                  </div>
-              </div>
-            </div>
-            
+        <div class="card card-block">
+        <img src="bulb.png" style="height:90px; margin-left:25%;">
+          <h4 class="card-title">Create</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
-    
+
+        <div class="card card-block">
+        <img src="merge.png" style="height:90px; margin-left:25%;">
+          <h4 class="card-title">Merge</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+
+        <div class="card card-block">
+        <img src="plan.png" style="height:90px; margin-left:25%;">
+          <h4 class="card-title">Plan</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
         
     </div>
 
-
-
+<footer>
+<p>2016 Colendar.com All rights reserved.</p>
+</footer>
 
 </body>
 
