@@ -85,7 +85,7 @@ body {
     }
     
     #jumbotron {
-        background-image: url(./images/calendar.png);
+        /*background-image: url(/images/calendar.png);*/
         background-size:100%;
         background-attachment: fixed;
         height: 455px;
