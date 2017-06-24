@@ -21,7 +21,8 @@ $(document).ready(function() {
 	$("#sign_form").submit(function (event) {
 		event.preventDefault();
 		var data = $(this).serialize();
-		console.log(data)
+		console.log(document.getElementById('firstName').value);
+
 		$.ajax({
 			url: SUBMIT_URL,
 			type: "POST",
