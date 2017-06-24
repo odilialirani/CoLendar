@@ -144,6 +144,29 @@ body {
         padding-top: 0.7%;
     }
 
+/*
 #signUpForm {
     
+}
+*/
+
+#formPage h2 {
+    animation: none;
+}
+
+#formPage #signUpForm {
+  text-align: left;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 10px auto;
+    
+}
+
+#formPage #signUpForm input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px #d3d3d3 solid;
+    margin-left: 10px;
+    padding-left: 5px;
 }
