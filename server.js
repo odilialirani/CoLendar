@@ -8,7 +8,7 @@ const pathName = {
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/images'));
-app.use(express.static(__dirname + '/css'));
+
 
 app.get('/', (req, res) => {
     res.sendFile('colendarHome.html', pathName);
