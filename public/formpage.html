@@ -4,14 +4,15 @@
         <title>CoLendar - Sign Up</title>
         
         
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         
         <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
         <script src="database.js"></script>
@@ -21,7 +22,6 @@
         <link rel="icon" href="logoscopic.png"/>
     </head>
     <body>
-        <div id="formPage">
             <header>
                 <div id="leftHeader">
                     <img src="logoscopic.png" style="height:50px"/>
@@ -36,6 +36,28 @@
                 </div>
             </header>
 
+                    <div id="formPage">
+
+            <!-- william's code -->
+            
+            
+              <div id="signupForm">
+                <h2>Create an account with Colendar</h2>
+                <div id="left-column">
+                  <input type="text" name="first_name" placeholder="First Name">
+                </div>
+                <div id="right-column">
+                  <input type="text" name="last_name" placeholder="Last Name">
+                </div>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Create account" class="submitButton">  
+            </div>
+            
+            
+            <!-------------------->
+            
+            <!--
             <div style="padding-top: 10%;">
                 <h2>Create an account with CoLendar</h2>
                 <div id="signUpForm" align="center">
@@ -49,6 +71,8 @@
                     </form>
                 </div>
             </div>
+
+            -->
             <section id="display_post">
 
             </section>
