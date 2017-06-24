@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+<!-- Backend JS -->
+<script src="/js/login.js"></script>
+<script src="/js/database.js"></script>
+    
+<!-- CSS Files -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+<title>CoLendar</title>
+
+</head>
+
+
+<body>
+    
+    <script>document.body.className += ' fade-out'; 
+        window.onload = function () { document.body.className = "";}
+    </script>
+    
+    <header>
+        <div id="leftHeader">
+            <img src="logoscopic.png" style="height:50px"/>
+            
+            <nav id="navbar" class="navbar navbar-fixed-top">
+                <nav class="navbar navbar-nav">
+                          <a class="nav-link" href="#">Home</a>
+                          <a class="nav-link" href="#">About</a>
+                          <a class="nav-link" href="#">Download the App</a>
+                </nav>
+            </nav>
+            
+        </div>
+        
+        <div id="loginForm">
+            <form class="form-inline pull-xs-right">
+                <input class="form-control" placeholder="Email" id ="signin_email" type="email"></input>
+                <input class="form-control" placeholder="password" id="signin_password" type="password"></input>
+                <button class="btn" onclick="signin()">Login</button>
+            </form>
+        </div>
+
+        
+    </header>
+    
+<div id="jumbotron">
+    <div id="jumbotronOverlay">
+        <div id="heading">
+        <h1><img src="logoscopic.png" class="logoSize"/>COLENDAR</h1>
+            <h2>This is why YOU should download this app!</h2>
+        </div>
+    </div>
+</div>
+        
+    <div id="features">
+    
+        <h3>Why This App Is Awesome</h3>
+    
+        <div class="card card-block">
+        <img src="bulb.png" style="height:90px; margin-left:25%;">
+          <h4 class="card-title">Create</h4>
+          <p class="card-text">Get orgranized! Create your daily plan with CoLendar</p>
+        </div>
+
+        <div class="card card-block">
+        <img src="merge.png" style="height:90px; margin-left:25%;">
+          <h4 class="card-title">Merge</h4>
+          <p class="card-text">Scheduling with your friends and coleagues has never been easier. Merge your schedules and to see your availabilities</p>
+        </div>
+
+        <div class="card card-block">
+        <img src="plan.png" style="height:90px; margin-left:25%;">
+          <h4 class="card-title">Plan</h4>
+          <p class="card-text">Plan your next friends' day out.</p>
+        </div>
+        
+    </div>
+
+<footer>
+<p>2016 Colendar.com All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>

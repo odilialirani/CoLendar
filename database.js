@@ -27,6 +27,9 @@ $(document).ready(function() {
 			type: "POST",
 			data: data
 		});
+        
+        // Redirect to profile
+        
 	})
 })
 

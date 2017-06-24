@@ -1,0 +1,149 @@
+body {
+        background-color: #ffffff;
+        opacity: 1;
+        transition: 3s opacity;
+    }
+    
+    body.fade-out {
+        opacity: 0;
+        transition: none;
+    }
+    
+    h1 {
+        color: #383838;
+        font-family: helvetica;
+        font-weight: 2px;
+        font-size: 90px;
+    }
+    
+    h2 {
+        color: #383838;
+        font-family: helvetica;
+        font-size: 20px;
+        
+        margin-left: 35%;
+        
+        white-space: nowrap;
+        overflow: hidden;
+
+        width:385px;
+
+        animation: type 3s steps(60, end);
+
+        animation-fill-mode:backwards;
+    }
+    
+    h2:nth-child(2){
+      animation: type2 6s steps(60, end);
+    }
+
+    @keyframes type{ 
+        from { width: 0;} 
+    } 
+
+    @keyframes type2{
+
+      0%{width: 0;}
+      50%{width: 0;}
+      100%{ width: 100;} 
+    } 
+
+    @keyframes blink{
+      to{opacity: .0;}
+    }
+
+    
+    header {
+        height: 55px;
+        padding-top: 10px;
+        background-color: rgba(255,255,255,1);
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 5px 5px grey;
+    }
+    
+    #leftHeader {
+        position: fixed;
+        top: 5px;
+    }
+    
+    #navbar {
+        font-size: 20px;
+        padding-left: 80px;
+        padding-top: 15px;
+        margin-right: 400px;
+    }
+    
+    .nav-link {
+        padding-right: 20px;
+        color: black;
+    }
+    
+    #loginForm {
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    #jumbotron {
+        background-image: url(./images/calendar.png);
+        background-size:100%;
+        background-attachment: fixed;
+        height: 455px;
+        text-align:center;
+    }
+    #jumbotronOverlay {
+            background-color: rgba(204,204,204,0.4);     /* rgba(60,136,126,0.4); */
+            height: 455px;
+
+    }
+    
+    #heading {
+        padding-top: 120px;
+    }
+    
+    .logoSize {
+        height: 130px;
+        width: 130px;
+        }
+    
+    #features {
+        margin: 70px 100px 30px 100px;
+    }
+    
+    h3 {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    
+    .thumbnail {
+        height: 300px;
+        background-color: #d9d9d9;
+        border: 0;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .card {
+        width: 20%;
+        float:left;
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    
+    footer {
+        clear: both;
+        text-align: center;
+        height: 60px;
+        background-color: rgba(89,89,89,1);
+        color: rgba(255,255,255,1);
+        padding-top: 0.7%;
+    }
+
+#signUpForm {
+    
+}
